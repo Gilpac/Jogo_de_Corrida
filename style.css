@@ -30,5 +30,30 @@ body{
 .personagem{
     position: absolute;
     bottom: 0;
-    
+    background-image: url(imagem/personagem.gif);
+    width: 280px;
+    height: 210px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    transform: scaleX(1);
+}
+
+.cato{
+    position: absolute;
+    bottom: 0;
+    background-image: url(imagem/cacto.png);
+    width: 35px;
+    height: 70px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    animation: cato 3s linear infinite;
+}
+
+@keyframes cato {
+    0% {
+        right: -20px;
+    }
+    100%{
+        right: 850px;
+    }
 }

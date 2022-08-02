@@ -8,4 +8,24 @@ document.addEventListener("keydown", (e) => {
     if ((e.code === "ArrowUp") | (e.code === "Space")){
         jump();
     }
-})
+});
+
+function jump() {
+    if (!personagem.classList.contains("jump")){
+        personagem.classList.add("jump");
+        alreadyJump = true;
+
+        setTimeout(() => {
+            personagem.classList.remove("jump");
+
+            alreadyJump = false;
+            }, 1100); 
+        }
+    }
+
+    setInterval(()=> { 
+        let personagemBottom = parseInt(
+            window.getComputedStyle(personagem).getPropertyValue("Bottom")
+        );
+
+    })
